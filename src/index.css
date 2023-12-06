@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* mono font for terminal */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+@keyframes blinker {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.terminal {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.blinker {
+  height: 2rem;
+  width: 1rem;
+  display: inline-block;
+  animation: blinker 1.3s infinite;
+}
+
+.blinker.small {
+  height: 1.2rem;
+  width: 0.6rem;
+  background-color: white;
+}
+
+.blinker.big {
+  height: 3.5rem;
+  width: 1.7rem;
+}
