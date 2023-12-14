@@ -20,11 +20,18 @@
   display: inline-block;
   animation: blinker 1.3s infinite;
 }
+@media (max-width: 425px) {
+  .blinker-main.small {
+    display: inline-block;
+  }
+  .blinker-main.big {
+    display: none;
+  }
+}
 
 .blinker.small {
   height: 1.2rem;
   width: 0.6rem;
-  background-color: white;
 }
 
 .blinker.big {

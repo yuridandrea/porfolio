@@ -1,14 +1,13 @@
-import About from './components/About';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import { About, Navbar, Projects, Contact } from './components';
 
 function App() {
   return (
     <section className='bg-[#F6F9FC]'>
-      <div className='m-auto w-7/12 md:w-9/12 lg:w-9/12'>
+      <div className='m-auto md:w-9/12 w-5/6'>
         <Navbar />
         <About />
         <Projects />
+        <Contact />
       </div>
     </section>
   );

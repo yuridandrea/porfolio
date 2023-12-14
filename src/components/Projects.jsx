@@ -2,19 +2,22 @@ import { projects } from './helper/projects';
 
 const Projects = () => {
   return (
-    <section className=''>
+    <section id='projects'>
       <h1 className='text-xl inline-block pr-2 text-slate-600 mb-8 mt-10 font-mono font-bold'>
         &gt; Projects
       </h1>
       <div>
         {projects.map((proj, i) => (
-          <div key={i} className='bg-white shadow-lg flex mb-8'>
+          <div
+            key={i}
+            className='bg-white shadow-lg flex mb-8 flex-wrap lg:flex-nowrap justify-center lg:justify-normal'
+          >
             <img
               src={proj.img}
               alt={proj.name}
-              className='object-cover mx-w-full w-[450px] h-[300px] rounded-l-md mr-5'
+              className='object-cover mx-w-full w-[450px] h-[300px] rounded-l-md md:mr-5 mr-0'
             />
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 px-8 lg:px-2'>
               <h2 className='text-xl mt-2 font-bold'>{proj.name}</h2>
               <p className='pr-5 mb-2'>{proj.description}</p>
               <ul className='my-2'>

@@ -2,13 +2,13 @@ import cv from '../assets/Y-Dandrea.pdf';
 
 const About = () => {
   return (
-    <section>
+    <section id='home'>
       <div>
-        <h1 className='text-[5rem] inline-block pr-2 text-slate-600 mt-[200px] font-mono'>
+        <h1 className='text-5xl inline-block pr-2 text-slate-600 md:mt-[200px] mt-28 font-mono lg:text-[5rem]'>
           &gt; Yuri D'Andrea
+          <div className='blinker blinker-main small big bg-slate-600'></div>
         </h1>
-        <div className='blinker big bg-slate-600'></div>
-        <p className='text-xl my-[100px] pr-[10rem]'>
+        <p className='text-lg md:text-xl md:my-[100px] md:pr-[10rem] mb-10 mt-7'>
           As a front-end developer, I specialize in building captivating user
           interfaces using the power of React. Proficient in HTML, CSS, and
           JavaScript, I bring creativity to life by seamlessly integrating
@@ -91,7 +91,7 @@ const About = () => {
             </p>
           </div>
           <div className='text-white'>
-            &gt; <div className='blinker small'></div>
+            &gt; <div className='blinker small bg-white '></div>
           </div>
         </div>
       </div>
